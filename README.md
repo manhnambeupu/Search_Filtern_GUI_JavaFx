@@ -14,6 +14,7 @@ Display data in a scrollable table view.
 Search and filter companies by name, address, postal code, city, freight transport, and passenger transport.
 Supports case-sensitive and case-insensitive search strategies.
 Responsive GUI that adjusts components size automatically.
+
 Technologies Used:
 Java
 JavaFX
@@ -31,6 +32,7 @@ Anzeigen der Daten in einer scrollbaren Tabellenansicht.
 Suchen und Filtern von Unternehmen nach Name, Adresse, Postleitzahl, Stadt, Güterverkehr und Personenverkehr.
 Unterstützt Groß-/Kleinschreibung-abhängige und -unabhängige Suchstrategien.
 Responsive GUI, die die Größe der Komponenten automatisch anpasst.
+
 Verwendete Technologien:
 Java
 JavaFX
@@ -49,6 +51,7 @@ Hiển thị dữ liệu trong bảng có thể cuộn.
 Tìm kiếm và lọc công ty theo tên, địa chỉ, mã bưu điện, thành phố, vận chuyển hàng hóa và vận chuyển hành khách.
 Hỗ trợ chiến lược tìm kiếm phân biệt và không phân biệt chữ hoa chữ thường.
 Giao diện người dùng đáp ứng tự động điều chỉnh kích thước các thành phần.
+
 Công nghệ sử dụng:
 Java
 JavaFX
