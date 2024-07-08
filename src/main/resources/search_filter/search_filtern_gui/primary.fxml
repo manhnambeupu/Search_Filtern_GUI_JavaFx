@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="search_filter.search_filtern_gui.PrimaryController">
+    <!-- Top section containing the search field and controls -->
+    <top>
+        <HBox alignment="CENTER" spacing="10" styleClass="top-container">
+            <Button fx:id="loadButton" onAction="#handleLoadButtonAction" text="Load CSV">
+                <tooltip>
+                    <Tooltip text="Click to load CSV file" />
+                </tooltip>
+            </Button>
+            <TextField fx:id="searchField" promptText="Search..." HBox.hgrow="ALWAYS">
+                <tooltip>
+                    <Tooltip text="Enter the search term here" />
+                </tooltip>
+            </TextField>
+            <Label text="Search Strategy:" />
+            <ChoiceBox fx:id="searchStrategyChoiceBox">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Case Sensitive" />
+                        <String fx:value="Case Insensitive" />
+                    </FXCollections>
+                </items>
+                <tooltip>
+                    <Tooltip text="Select the search strategy (Case Sensitive or Case Insensitive)" />
+                </tooltip>
+            </ChoiceBox>
+            <Label text="Filter:" />
+            <CheckBox fx:id="filterGueterverkehr" text="Güterverkehr">
+                <tooltip>
+                    <Tooltip text="Check to filter for freight transport" />
+                </tooltip>
+            </CheckBox>
+            <CheckBox fx:id="filterPersonenverkehr" text="Personenverkehr">
+                <tooltip>
+                    <Tooltip text="Check to filter for passenger transport" />
+                </tooltip>
+            </CheckBox>
+        </HBox>
+    </top>
+
+    <!-- Center section containing the table view -->
+    <center>
+        <TableView fx:id="dataTableView">
+            <columns>
+                <TableColumn fx:id="columnUnternehmen" text="Unternehmen" />
+                <TableColumn fx:id="columnStrasse" text="Straße" />
+                <TableColumn fx:id="columnPLZ" text="PLZ" />
+                <TableColumn fx:id="columnOrt" text="Ort" />
+                <TableColumn fx:id="columnGueterverkehr" text="Güterverkehr" />
+                <TableColumn fx:id="columnPersonenverkehr" text="Personenverkehr" />
+            </columns>
+            <tooltip>
+                <Tooltip text="Displays the list of companies" />
+            </tooltip>
+        </TableView>
+    </center>
+</BorderPane>

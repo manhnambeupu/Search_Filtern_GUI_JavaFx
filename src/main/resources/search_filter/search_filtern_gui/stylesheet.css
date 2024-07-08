@@ -1,0 +1,31 @@
+/* stylesheet.css */
+.top-container {
+    -fx-padding: 10;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 0 0 1 0;
+}
+
+TextField {
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+}
+
+ChoiceBox, CheckBox, Label, Button {
+    -fx-font-size: 14px;
+}
+
+TableView {
+    -fx-padding: 10;
+}
+
+TableColumn {
+    -fx-font-size: 14px;
+}
+
+Tooltip {
+    -fx-font-size: 12px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1;
+}
