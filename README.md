@@ -23,5 +23,7 @@ This project is a JavaFX application for managing and searching railway companie
 - ☕ Java
 - 🖥️ JavaFX
 - 📐 MVC Design Pattern
+- 🛠️ Scene Builder for GUI
+- 💻 IntelliJ IDEA
 
 +++
