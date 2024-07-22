@@ -5,8 +5,6 @@ JavaFX application for managing and searching
 
 ## 📜 Project Description 📜
 
-### 1. English 🇬🇧
-
 **Title:** Railway Companies Management in JavaFX
 
 **Description:**
